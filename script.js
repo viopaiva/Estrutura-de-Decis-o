@@ -10,3 +10,40 @@ function somaMaior() {
     console.log("Fim!")
   }
 }
+function tempoCasamento() {
+let nome = String(prompt("Digite seu nome:")).toUpperCase();
+let genero= String(prompt("Qual seu gênero? 'M' ou 'F'?")).toUpperCase();
+let estadoCivil = String(prompt("Qual seu estado civil? Solteiro(a) ou Casado(a)?")).toUpperCase();
+console.log(`
+   =========
+   Nome: ${nome},
+   Genero:${genero},
+   Estado Civil: ${estadoCivil}   
+`);
+console.log(genero);
+console.log(estadoCivil);
+
+if (genero === 'F' && estadoCivil === 'CASADA') {
+    let tempoCasada = Number(prompt("Quantos anos de casada?"));
+    alert(`
+        ==========
+         Nome: ${nome},
+         Gênero: ${gênero},
+         Tempo de Casada: ${tempoCasada}
+   `);
+
+}
+}
+
+function imparPar() {
+    let num = Number(prompt("Digite um número:"));
+    if (num % 2 === 0) {
+        alert ("Este número é par");
+    } else if (num % 2 === 1) {
+        alert ("Este número é ímpar")
+    } else {
+        alert ("Caractere inválido")
+        imparPar()
+    }
+}
+    
